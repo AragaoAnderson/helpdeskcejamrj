@@ -2571,7 +2571,7 @@ abstract class CommonITILObject extends CommonDBTM
         $input = $this->transformActorsInput($input);
 
        // save value before clean;
-        $title = ltrim($input['name']);
+       // COMENTADO POR ANDERSON $title = ltrim($input['name']);
 
        // Set default status to avoid notice
         if (!isset($input["status"])) {
@@ -2623,7 +2623,7 @@ abstract class CommonITILObject extends CommonDBTM
         }
 
        // No name set name
-        $input["name"]    = ltrim($input["name"]);
+       // COMENTADO POR ANDERSON $input["name"]    = ltrim($input["name"]);
         $input['content'] = ltrim($input['content']);
         if (empty($input["name"])) {
            // Build name based on content

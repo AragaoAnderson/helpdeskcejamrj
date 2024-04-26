@@ -234,7 +234,7 @@ class GLPIDashboard {
                 if (minutes == 0 || Number.isNaN(minutes)) {
                     minutes = 30;
                 }
-                var seconds = minutes * 60;
+                var seconds = minutes * 6;
                 that.interval = setInterval(function() {
                     that.refreshDashboard();
                 }, seconds * 1000);
